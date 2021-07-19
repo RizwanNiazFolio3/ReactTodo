@@ -27,8 +27,6 @@ class App extends React.Component
                 }
                 return todo
             })
-            console.log(prevState.data)
-            console.log(newTodosData)
             return {
                 data:newTodosData
             }

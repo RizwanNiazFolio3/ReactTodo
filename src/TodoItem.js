@@ -11,7 +11,7 @@ class TodoItem extends React.Component
                 checked = {this.props.item.completed} 
                 onChange={() => this.props.handleChange(this.props.item.id)}
                 />
-                <p>{this.props.item.text}</p>
+                <p className={this.props.item.completed ? "checked" : null}>{this.props.item.text}</p>
             </div>
         )
     }
